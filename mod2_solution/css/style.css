@@ -1,0 +1,123 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif, helvetica Neue;
+    background-color: #a9cbcb;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: center;
+}
+/*-- DEFAULT LAYOUT (MOBILE)------------------------------------------------------------------*/
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    width: 35%;
+    margin: 50px auto 20px;
+    font-size: 1.75em;
+}
+.container {
+    margin: 50px;
+}
+.section-1, .section-2, .section-3 {
+    width: 100%;
+    border: 1px solid red;
+    height: 400px;
+    background-color: #28a745;
+    margin: 30px auto; 
+    overflow: auto;
+}
+.section-title {
+    box-sizing: border-box;
+    float: right;
+    width: 25%;
+    background-color: red;
+    padding: 2px 0;
+    font-size: 1.25em;
+    border: 1px solid white;
+    margin: 0;
+}
+.section-title p{
+    margin: 0;
+}
+.description {
+    text-align: justify;
+    text-indent: 20px;
+    padding: 5px;
+}
+img {
+    width: 100px;
+    height: 150px;
+    margin-top: 20px;
+}
+.image {
+    clear: both;
+}
+
+
+/*-- TABLET LAYOUT------------------------------------------------------------------*/
+
+@media  (min-width: 768px) and (max-width: 991px) {
+    .section-1, .section-2 {
+        box-sizing: border-box;
+        width: 48%;
+        margin: 30px 0;
+    }
+    .container {
+        margin: 30px;
+    }
+   .section-1 {
+       float: left;
+   }
+   .section-2 {
+       float: right;
+   }
+    .section-3 {
+        width: 100%;
+        clear: both;
+    }
+    .section-title {
+        width: 50%;
+    }
+    .section-title.sect3 {
+        width: 25%;
+    }
+}
+
+/*-- DESKTOP LAYOUT------------------------------------------------------------------*/
+
+@media (min-width: 992px) {
+    .container {
+        text-align: center;
+        box-sizing: border-box;
+        margin: 30px;
+    }
+    .section-1, .section-2, .section-3 {
+        display: inline-block;
+        width: 31.6%;
+    }
+    .section-1 {
+        margin-left: 0;
+        float: left;
+    }
+    .section-3 {
+        margin-right: 0;
+        float: right;
+    }
+    .section-title {
+        width: 50%;
+    }
+}
+
+/*-- MODIFIED MOBILE LAYOUT WITH MAX 560PX SCREEN------------------------------------------------------------------*/
+
+@media (max-width: 560px) {
+    h1 {
+        width: 165px;
+    }
+    .section-title {
+        width: 100%;
+    }
+}
