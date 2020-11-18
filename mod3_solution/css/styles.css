@@ -1,0 +1,97 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #f6d55c;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* .................. header ................... */
+
+#header-nav {
+    background-color: #533549; 
+    border-radius: 0;
+    border: 0;
+}
+.navbar-brand {
+    padding-top: 15px;
+}
+.navbar-brand h1 { 
+    font-family: 'Lora', serif;
+    color: #f6d55c;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 25px;
+}
+.navbar-brand a:hover, .navbar-brand a:focus { /* company name*/
+    text-decoration: none;
+}
+#nav-list {                                 /*dropdown area*/
+    margin-top: 10px;
+}
+#nav-list a {
+    color: #f6d55c;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: #4a171e;
+}
+
+.navbar-header button.navbar-toggle {     /*menu/button area*/
+    border: 1px solid #f6d55c;
+}
+.navbar-toggle a {
+    text-decoration: none;
+    color: #f6d55c;
+}
+#navhover:hover {
+    background-color: black;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -30px;
+    padding: 5px;
+}
+
+/* .................. section ................... */
+
+section h2 {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+    color: #3c1a5b;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+.menu-list h3 {
+    font-size: 1.3em;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+}
+section .menu-list {
+    background-color:#358597;
+    margin-bottom: 30px;
+    padding: 5px 20px 10px;
+}
+.menu-list p {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* .................. media queries ................... */
+
+@media (max-width: 768px) {
+    section .menu-list {
+        margin: 0 50px;
+        margin-bottom: 30px;
+    }
+    .navbar-brand {
+        padding-top: 25px;
+    }
+}
+
+/* .................. end of media queries................... */
